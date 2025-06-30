@@ -4,41 +4,37 @@ import { Briefcase, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Student Associate",
-      company: "Caarya",
-      period: "Current",
-      description: "Researching startups, writing articles, and leading student consultant activities. Focused on startup ecosystem analysis and content creation.",
+      title: "Summer Trainee",
+      company: "Indian Institute of Remote Sensing (IIRS), ISRO",
+      location: "Dehradun (On-site)",
+      period: "May 2025 – July 2025",
+      description: "Developed GEO-Himalaya – a Flask-based AI chatbot integrated with LangChain and Ollama to answer geospatial queries using government-published vector datasets of Uttarakhand. Leveraged structured metadata to enable accurate, context-specific LLM responses based on official geospatial data. The chatbot is planned to be integrated into the public GIS portal maps.iirs.gov.in",
       type: "current"
     },
     {
-      title: "Intern & Volunteer",
-      company: "TCD",
-      period: "2023",
-      description: "Assisted in organizing events and bridging academic-corporate gaps. Contributed to community building and knowledge sharing initiatives.",
+      title: "Intern",
+      company: "Defence Research and Development Laboratory (DRDL), DRDO",
+      location: "Hyderabad (On-site)",
+      period: "May 2024 – June 2024",
+      description: "Designed a role-based access control inventory management web application system which led to seamless updates and real-time visibility for all divisions. Implemented access control mechanisms, allowing scientists to view only their division's inventory while restricting access to others, leading to enhanced data security and streamlined inventory tracking.",
       type: "past"
     },
     {
-      title: "Product Intern",
-      company: "Agnirva",
+      title: "Intern",
+      company: "Training and Competency Development (TCD) - GCGC",
+      location: "Hybrid",
       period: "2023",
-      description: "Involved in basic product documentation and research. Gained hands-on experience in product development lifecycle and market analysis.",
-      type: "past"
-    },
-    {
-      title: "Project Contributor",
-      company: "DRDO",
-      period: "2022-2023",
-      description: "Developed a role-based inventory management system using Flask. Contributed to defense technology requirements and system design.",
+      description: "Organized events that bridge the gap between academics and corporate connections. Assisted in organizing events and bridging academic-corporate gaps, contributing to community building and knowledge sharing initiatives.",
       type: "past"
     }
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-indigo-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Experience</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
+          <div className="w-24 h-1 bg-indigo-600 mx-auto"></div>
         </div>
         
         <div className="space-y-8">
@@ -47,26 +43,27 @@ const Experience = () => {
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <div className="flex items-center mb-2 md:mb-0">
-                  <Briefcase className="text-blue-600 mr-3" size={24} />
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div className="flex items-start mb-2 md:mb-0">
+                  <Briefcase className="text-indigo-600 mr-3 mt-1" size={24} />
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-800">{exp.title}</h3>
-                    <p className="text-blue-600 font-medium">{exp.company}</p>
+                    <h3 className="text-xl font-semibold text-gray-800">{exp.title}</h3>
+                    <p className="text-indigo-600 font-medium">{exp.company}</p>
+                    <p className="text-gray-500 text-sm">{exp.location}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Calendar className="text-slate-400 mr-2" size={20} />
+                  <Calendar className="text-gray-400 mr-2" size={20} />
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     exp.type === 'current' 
                       ? 'bg-green-100 text-green-800' 
-                      : 'bg-slate-100 text-slate-600'
+                      : 'bg-gray-100 text-gray-600'
                   }`}>
                     {exp.period}
                   </span>
                 </div>
               </div>
-              <p className="text-slate-600 leading-relaxed">{exp.description}</p>
+              <p className="text-gray-600 leading-relaxed">{exp.description}</p>
             </div>
           ))}
         </div>

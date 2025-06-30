@@ -20,6 +20,7 @@ const Navigation = () => {
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
+    { href: "#achievements", label: "Achievements" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -29,7 +30,7 @@ const Navigation = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-slate-800">
+          <div className="text-2xl font-bold text-gray-800">
             Bhavana
           </div>
 
@@ -39,7 +40,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-slate-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-600 hover:text-indigo-600 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -63,7 +64,7 @@ const Navigation = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-slate-600 hover:text-blue-600 transition-colors duration-200"
+                  className="block px-3 py-2 text-gray-600 hover:text-indigo-600 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
