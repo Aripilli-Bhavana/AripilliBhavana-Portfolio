@@ -30,40 +30,40 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-indigo-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-gray-800 to-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
-          <div className="w-24 h-1 bg-indigo-600 mx-auto"></div>
+          <h2 className="text-4xl font-bold text-gray-100 mb-4">Experience</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-500 to-gray-600 mx-auto"></div>
         </div>
         
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-gray-600 hover:border-gray-500"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex items-start mb-2 md:mb-0">
-                  <Briefcase className="text-indigo-600 mr-3 mt-1" size={24} />
+                  <Briefcase className="text-gray-400 mr-3 mt-1" size={24} />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-800">{exp.title}</h3>
-                    <p className="text-indigo-600 font-medium">{exp.company}</p>
-                    <p className="text-gray-500 text-sm">{exp.location}</p>
+                    <h3 className="text-xl font-semibold text-gray-100">{exp.title}</h3>
+                    <p className="text-gray-300 font-medium">{exp.company}</p>
+                    <p className="text-gray-400 text-sm">{exp.location}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Calendar className="text-gray-400 mr-2" size={20} />
+                  <Calendar className="text-gray-500 mr-2" size={20} />
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     exp.type === 'current' 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-gray-100 text-gray-600'
+                      ? 'bg-green-900/50 text-green-300 border border-green-700' 
+                      : 'bg-gray-700/50 text-gray-300 border border-gray-600'
                   }`}>
                     {exp.period}
                   </span>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed">{exp.description}</p>
+              <p className="text-gray-300 leading-relaxed">{exp.description}</p>
             </div>
           ))}
         </div>

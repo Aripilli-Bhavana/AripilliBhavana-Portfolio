@@ -26,32 +26,32 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-gray-900/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
-          <div className="w-24 h-1 bg-indigo-600 mx-auto"></div>
+          <h2 className="text-4xl font-bold text-gray-100 mb-4">Projects</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-500 to-gray-600 mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-600 hover:border-gray-500"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
-                <span className="text-sm text-indigo-600 font-medium bg-indigo-100 px-3 py-1 rounded-full">
+                <h3 className="text-2xl font-semibold text-gray-100">{project.title}</h3>
+                <span className="text-sm text-gray-300 font-medium bg-gray-700/50 px-3 py-1 rounded-full border border-gray-600">
                   {project.status}
                 </span>
               </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
+              <p className="text-gray-300 mb-6 leading-relaxed">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gray-700/50 text-gray-300 rounded-full text-sm font-medium border border-gray-600"
                   >
                     {tag}
                   </span>
@@ -61,14 +61,14 @@ const Projects = () => {
               <div className="flex space-x-4">
                 <a
                   href={project.links.demo}
-                  className="flex items-center text-indigo-600 hover:text-indigo-700 transition-colors duration-200"
+                  className="flex items-center text-gray-400 hover:text-gray-300 transition-colors duration-200"
                 >
                   <ExternalLink size={20} className="mr-2" />
                   <span>Demo</span>
                 </a>
                 <a
                   href={project.links.github}
-                  className="flex items-center text-gray-600 hover:text-gray-700 transition-colors duration-200"
+                  className="flex items-center text-gray-400 hover:text-gray-300 transition-colors duration-200"
                 >
                   <Github size={20} className="mr-2" />
                   <span>Code</span>

@@ -36,43 +36,43 @@ const Achievements = () => {
   const getIconForType = (type: string) => {
     switch (type) {
       case 'academic':
-        return <Trophy className="text-yellow-600" size={24} />;
+        return <Trophy className="text-yellow-400" size={24} />;
       case 'entrepreneurship':
-        return <Award className="text-purple-600" size={24} />;
+        return <Award className="text-purple-400" size={24} />;
       case 'competition':
-        return <Award className="text-blue-600" size={24} />;
+        return <Award className="text-blue-400" size={24} />;
       case 'leadership':
-        return <Award className="text-green-600" size={24} />;
+        return <Award className="text-green-400" size={24} />;
       default:
-        return <Award className="text-indigo-600" size={24} />;
+        return <Award className="text-gray-400" size={24} />;
     }
   };
 
   return (
-    <section id="achievements" className="py-20 bg-white">
+    <section id="achievements" className="py-20 bg-gray-900/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Achievements */}
           <div>
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Achievements</h2>
-              <div className="w-16 h-1 bg-indigo-600 mx-auto"></div>
+              <h2 className="text-3xl font-bold text-gray-100 mb-4">Achievements</h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-gray-500 to-gray-600 mx-auto"></div>
             </div>
             
             <div className="space-y-6">
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl hover:shadow-lg transition-shadow duration-300"
+                  className="flex items-start space-x-4 p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl hover:shadow-2xl transition-all duration-300 border border-gray-600 hover:border-gray-500"
                 >
                   <div className="flex-shrink-0">
                     {getIconForType(achievement.type)}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-gray-100 mb-2">
                       {achievement.title}
                     </h3>
-                    <p className="text-gray-600">{achievement.description}</p>
+                    <p className="text-gray-300">{achievement.description}</p>
                   </div>
                 </div>
               ))}
@@ -82,20 +82,20 @@ const Achievements = () => {
           {/* Goals */}
           <div>
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Future Goals</h2>
-              <div className="w-16 h-1 bg-indigo-600 mx-auto"></div>
+              <h2 className="text-3xl font-bold text-gray-100 mb-4">Future Goals</h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-gray-500 to-gray-600 mx-auto"></div>
             </div>
             
             <div className="space-y-4">
               {goals.map((goal, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 p-6 bg-gradient-to-r from-green-50 to-indigo-50 rounded-xl hover:shadow-lg transition-shadow duration-300"
+                  className="flex items-start space-x-4 p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl hover:shadow-2xl transition-all duration-300 border border-gray-600 hover:border-gray-500"
                 >
                   <div className="flex-shrink-0">
-                    <Target className="text-indigo-600" size={24} />
+                    <Target className="text-gray-400" size={24} />
                   </div>
-                  <p className="text-gray-700 leading-relaxed">{goal}</p>
+                  <p className="text-gray-300 leading-relaxed">{goal}</p>
                 </div>
               ))}
             </div>
