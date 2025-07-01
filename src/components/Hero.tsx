@@ -13,11 +13,10 @@ const Hero = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col items-center text-center space-y-8">
-          {/* Profile Photo with soft blur background */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-600/20 via-gray-500/10 to-slate-700/20 rounded-full blur-xl scale-110"></div>
-            <div className="relative w-48 h-56 bg-gradient-to-br from-slate-700/80 via-slate-600/80 to-slate-800/80 rounded-lg shadow-2xl flex items-center justify-center backdrop-blur-sm border border-slate-600/30">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* Profile Photo */}
+          <div className="flex-shrink-0">
+            <div className="w-48 h-56 bg-gradient-to-br from-slate-700/80 via-slate-600/80 to-slate-800/80 rounded-lg shadow-2xl flex items-center justify-center backdrop-blur-sm">
               <span className="text-slate-300 text-sm text-center px-4">
                 Passport Size Photo<br/>
                 (Add your photo here)
@@ -26,7 +25,7 @@ const Hero = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-6">
+          <div className="flex-1 text-center md:text-left space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               <span className="bg-gradient-to-r from-gray-100 via-slate-200 to-gray-300 bg-clip-text text-transparent">
                 Aripilli Bhavana
@@ -45,7 +44,7 @@ const Hero = () => {
               "Creating solutions that help others is my ikigai!!"
             </p>
             
-            <div className="flex justify-center space-x-6 pt-4">
+            <div className="flex justify-center md:justify-start space-x-6 pt-4">
               <a
                 href="mailto:aripilli.bhavana8@gmail.com"
                 className="p-4 bg-slate-700/80 text-white rounded-full hover:bg-slate-600 transition-all duration-300 hover:scale-110 transform shadow-lg border border-slate-600 backdrop-blur-sm"

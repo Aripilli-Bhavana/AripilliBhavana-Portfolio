@@ -1,4 +1,3 @@
-
 import { Award, ExternalLink } from "lucide-react";
 
 const Skills = () => {
@@ -15,7 +14,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git/GitHub", "VS Code", "Power BI", "Tableau", "QGIS", "Excel"],
+      skills: ["Git/GitHub", "VS Code", "Power BI", "QGIS", "Excel"],
       color: "purple"
     },
     {
@@ -25,7 +24,7 @@ const Skills = () => {
     },
     {
       title: "Core Concepts",
-      skills: ["Data Structures", "Algorithms", "Computer Networks", "Database Management"],
+      skills: ["Data Structures", "Computer Networks", "Database Management"],
       color: "red"
     }
   ];
