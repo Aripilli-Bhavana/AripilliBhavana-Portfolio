@@ -4,24 +4,24 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Refuel - On-Demand Fuel Delivery Startup",
-      description: "Founded and developing an on-demand fuel delivery service designed to revolutionize the way people refuel their vehicles, focusing on convenience, safety, and efficiency for individual and fleet customers. Aiming to serve 1 million users by 2027, focusing on urban commuters, fleet operators, and rural areas. Finalist at Levyug's LevUP Ideathon over 327+ participating teams.",
-      tags: ["Startup", "Product Design", "Business Development", "Market Research"],
-      links: {
-        demo: "#",
-        github: "#"
-      },
-      status: "Founder | Feb 2023 – Present"
-    },
-    {
       title: "AI-Driven Internship & Placement Recommendation System",
-      description: "Addressed the disconnect between student skills and internship/placement requirements by developing an AI-powered platform using Python and React.js. Automated internship/placement recommendations by analyzing resumes, skills, and job descriptions via NLP and content-based filtering, enhancing role relevancy for students. Full-stack platform with ATS resume analysis, internship search, and real-time collaboration.",
+      description: "Developing an AI-powered platform using Python and React.js to bridge the gap between student skills and internship/placement requirements. Implementing NLP and content-based filtering for automated recommendations, ATS resume analysis, and real-time collaboration features.",
       tags: ["Python", "React.js", "NLP", "AI/ML", "Full-Stack"],
       links: {
         demo: "#",
         github: "#"
       },
       status: "Feb 2025 – Present"
+    },
+    {
+      title: "Refuel - On-Demand Fuel Delivery Startup",
+      description: "Founded and developing an on-demand fuel delivery service designed to revolutionize the way people refuel their vehicles, focusing on convenience, safety, and efficiency for individual and fleet customers. Aiming to serve 1 million users by 2027, focusing on urban commuters, fleet operators, and rural areas.",
+      tags: ["Startup", "Product Design", "Business Development", "Market Research"],
+      links: {
+        demo: "#",
+        github: "#"
+      },
+      status: "Founder | Feb 2023 – Present"
     }
   ];
 

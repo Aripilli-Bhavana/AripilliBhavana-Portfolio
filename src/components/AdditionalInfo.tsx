@@ -1,8 +1,50 @@
 
-import { Users, Award, Trophy, Heart } from "lucide-react";
+import { Users, Award, Trophy, Heart, Briefcase, Star } from "lucide-react";
 
 const AdditionalInfo = () => {
   const additionalItems = [
+    {
+      title: "PwC Launchpad - Salesforce Trainee",
+      description: "Selected for the PwC Salesforce Launchpad, an exclusive learning program designed to enhance skills in Salesforce technologies and cloud-based solutions.",
+      icon: <Award className="w-6 h-6" />,
+      color: "blue",
+      date: "Feb 2025 – May 2025"
+    },
+    {
+      title: "Student Representative - Student Tribe",
+      description: "Acting as a bridge between students of Visakhapatnam and Student Tribe to promote initiatives, events and opportunities within the community.",
+      icon: <Users className="w-6 h-6" />,
+      color: "green",
+      date: "Nov 2024 – May 2025"
+    },
+    {
+      title: "Student Associate - Caarya",
+      description: "Provided executive assistant services supporting startup ecosystem building and student engagement initiatives. Led team research on startup journeys, managed content calendars, conducted founder interviews, and published weekly newsletters.",
+      icon: <Briefcase className="w-6 h-6" />,
+      color: "purple",
+      date: "Nov 2024 – Jan 2025"
+    },
+    {
+      title: "Academy for Women Entrepreneurs (AWE) - Andhra Pradesh Cohort",
+      description: "Selected participant in the exclusive AWE Program 2024 cohort (Top 40 in Andhra Pradesh), supported by U.S. Consulate Hyderabad and ACIR. Gained essential business knowledge, mentorship, and networking opportunities through workshops and strategic guidance.",
+      icon: <Trophy className="w-6 h-6" />,
+      color: "orange",
+      date: "Aug 2024 – Nov 2024"
+    },
+    {
+      title: "Finalist - LevUP Ideathon",
+      description: "Finalist among 327 applicants for the LevUP Ideathon with Refuel startup concept. Made it to the final 10, demonstrating innovative solutions in the on-demand fuel delivery sector.",
+      icon: <Star className="w-6 h-6" />,
+      color: "yellow",
+      date: "Apr 2024 – May 2024"
+    },
+    {
+      title: "Lead of Public Relations (PR) - SHORE GITAM",
+      description: "Led PR strategies for SHORE fest, managing relationships and communication with the public. Successfully contributed to attracting 12K+ attendees through effective PR campaigns and public image management.",
+      icon: <Users className="w-6 h-6" />,
+      color: "red",
+      date: "Dec 2023 – Feb 2024"
+    },
     {
       title: "Facilitator - Google Cloud Arcade",
       description: "Participated in Google Cloud's gamified learning program, exploring hands-on labs in cloud computing, AI/ML, and application development. Engaged in monthly challenges and activities to build practical cloud skills and deepen technical knowledge.",
@@ -41,7 +83,8 @@ const AdditionalInfo = () => {
       purple: "bg-purple-900/30 border-purple-700/50 text-purple-300",
       green: "bg-green-900/30 border-green-700/50 text-green-300",
       red: "bg-red-900/30 border-red-700/50 text-red-300",
-      orange: "bg-orange-900/30 border-orange-700/50 text-orange-300"
+      orange: "bg-orange-900/30 border-orange-700/50 text-orange-300",
+      yellow: "bg-yellow-900/30 border-yellow-700/50 text-yellow-300"
     };
     return colors[color as keyof typeof colors] || colors.blue;
   };
@@ -65,7 +108,14 @@ const AdditionalInfo = () => {
                   {item.icon}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-100 mb-2">{item.title}</h3>
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-semibold text-gray-100">{item.title}</h3>
+                    {item.date && (
+                      <span className="text-xs text-gray-400 bg-gray-700/50 px-2 py-1 rounded-full">
+                        {item.date}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
                 </div>
               </div>

@@ -12,67 +12,11 @@ const Experience = () => {
       type: "upcoming"
     },
     {
-      title: "PwC Launchpad - Salesforce Trainee",
-      company: "PwC Acceleration Centers in India",
-      location: "Remote",
-      period: "Feb 2025 – May 2025",
-      description: "Selected for the PwC Salesforce Launchpad, an exclusive learning program designed to enhance skills in Salesforce technologies and cloud-based solutions.",
-      type: "upcoming"
-    },
-    {
-      title: "AI-Driven Internship & Placement Recommendation System",
-      company: "Personal Project",
-      location: "Remote",
-      period: "Feb 2025 – Present",
-      description: "Developing an AI-powered platform using Python and React.js to bridge the gap between student skills and internship/placement requirements. Implementing NLP and content-based filtering for automated recommendations.",
-      type: "current"
-    },
-    {
-      title: "Student Representative",
-      company: "Student Tribe (formerly stuMagz)",
-      location: "Visakhapatnam, Andhra Pradesh",
-      period: "Nov 2024 – May 2025",
-      description: "Acting as a bridge between students of Visakhapatnam and Student Tribe to promote initiatives, events and opportunities within the community.",
-      type: "current"
-    },
-    {
-      title: "Student Associate",
-      company: "Caarya",
-      location: "Visakhapatnam / Remote",
-      period: "Nov 2024 – Jan 2025",
-      description: "Provided executive assistant services supporting startup ecosystem building and student engagement initiatives. Led team research on startup journeys, managed content calendars, conducted founder interviews, and published weekly newsletters.",
-      type: "past"
-    },
-    {
-      title: "Andhra Pradesh Cohort Training Program",
-      company: "Academy for Women Entrepreneurs (AWE)",
-      location: "Andhra Pradesh",
-      period: "Aug 2024 – Nov 2024",
-      description: "Selected participant in the exclusive AWE Program 2024 cohort (Top 40 in Andhra Pradesh), supported by U.S. Consulate Hyderabad and ACIR. Gained essential business knowledge, mentorship, and networking opportunities through workshops and strategic guidance.",
-      type: "past"
-    },
-    {
       title: "Intern",
       company: "Defence Research and Development Laboratory (DRDL), DRDO",
       location: "Hyderabad (On-site)",
       period: "May 2024 – June 2024",
       description: "Designed a role-based access control inventory management web application system which led to seamless updates and real-time visibility for all divisions. Implemented access control mechanisms, allowing scientists to view only their division's inventory while restricting access to others.",
-      type: "past"
-    },
-    {
-      title: "Finalist LevUP Ideathon",
-      company: "Levyug",
-      location: "Remote",
-      period: "Apr 2024 – May 2024",
-      description: "Finalist among 327 applicants for the LevUP Ideathon with Refuel startup concept. Made it to the final 10, demonstrating innovative solutions in the on-demand fuel delivery sector.",
-      type: "past"
-    },
-    {
-      title: "Lead of Public Relations (PR)",
-      company: "SHORE GITAM (Deemed To Be University)",
-      location: "Visakhapatnam, Andhra Pradesh",
-      period: "Dec 2023 – Feb 2024",
-      description: "Led PR strategies for SHORE fest, managing relationships and communication with the public. Successfully contributed to attracting 12K+ attendees through effective PR campaigns and public image management.",
       type: "past"
     },
     {
