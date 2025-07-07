@@ -3,12 +3,44 @@ import { Users, Award, Trophy, Heart, Briefcase, Star } from "lucide-react";
 
 const AdditionalInfo = () => {
   const additionalItems = [
+  
     {
-      title: "PwC Launchpad - Salesforce Trainee",
-      description: "Selected for the PwC Salesforce Launchpad, an exclusive learning program designed to enhance skills in Salesforce technologies and cloud-based solutions.",
+      title: "Finalist - LevUP Ideathon",
+      description: "Finalist among 327 applicants for the LevUP Ideathon with Refuel startup concept. Made it to the final 10, demonstrating innovative solutions in the on-demand fuel delivery sector.",
+      icon: <Star className="w-6 h-6" />,
+      color: "yellow",
+      date: "Apr 2024 – May 2024"
+    },
+    {
+      title: "Academy for Women Entrepreneurs (AWE) - Andhra Pradesh Cohort",
+      description: "Selected participant in the exclusive AWE Program 2024 cohort (Top 40 in Andhra Pradesh), supported by U.S. Consulate Hyderabad and ACIR. Gained essential business knowledge, mentorship, and networking opportunities through workshops and strategic guidance.",
+      icon: <Trophy className="w-6 h-6" />,
+      color: "orange",
+      date: "Aug 2024 – Nov 2024"
+    },
+    {
+      title: "Member - Women in Cloud Digital Network",
+      description: "Active member of the Women in Cloud Digital Network, contributing to the advancement of women in cloud computing and technology fields through networking, mentorship, and skill development.",
+      icon: <Users className="w-6 h-6" />,
+      color: "purple"
+    },
+    {
+      title: "Facilitator - Google Cloud Arcade",
+      description: "Participated in Google Cloud's gamified learning program, exploring hands-on labs in cloud computing, AI/ML, and application development. Engaged in monthly challenges and activities to build practical cloud skills and deepen technical knowledge.",
       icon: <Award className="w-6 h-6" />,
-      color: "blue",
-      date: "Feb 2025 – May 2025"
+      color: "blue"
+    },
+    {
+      title: "Participant - Infosys Springboard Pragati Cohort 4",
+      description: "Participated in The Pragati: Path to Future cohort by Infosys Springboard, a 3.5-month hybrid skilling program for women, featuring in-person and virtual training by industry experts in cutting-edge technologies.",
+      icon: <Trophy className="w-6 h-6" />,
+      color: "green"
+    },
+    {
+      title: "Participant - GirlScript Summer of Code 2024",
+      description: "Participated in GirlScript Summer of Code (GSSoC) 2024, contributing to open-source projects and collaborating with developers worldwide to enhance coding skills and contribute to meaningful software development.",
+      icon: <Award className="w-6 h-6" />,
+      color: "orange"
     },
     {
       title: "Student Representative - Student Tribe",
@@ -24,20 +56,8 @@ const AdditionalInfo = () => {
       color: "purple",
       date: "Nov 2024 – Jan 2025"
     },
-    {
-      title: "Academy for Women Entrepreneurs (AWE) - Andhra Pradesh Cohort",
-      description: "Selected participant in the exclusive AWE Program 2024 cohort (Top 40 in Andhra Pradesh), supported by U.S. Consulate Hyderabad and ACIR. Gained essential business knowledge, mentorship, and networking opportunities through workshops and strategic guidance.",
-      icon: <Trophy className="w-6 h-6" />,
-      color: "orange",
-      date: "Aug 2024 – Nov 2024"
-    },
-    {
-      title: "Finalist - LevUP Ideathon",
-      description: "Finalist among 327 applicants for the LevUP Ideathon with Refuel startup concept. Made it to the final 10, demonstrating innovative solutions in the on-demand fuel delivery sector.",
-      icon: <Star className="w-6 h-6" />,
-      color: "yellow",
-      date: "Apr 2024 – May 2024"
-    },
+    
+   
     {
       title: "Lead of Public Relations (PR) - SHORE GITAM",
       description: "Led PR strategies for SHORE fest, managing relationships and communication with the public. Successfully contributed to attracting 12K+ attendees through effective PR campaigns and public image management.",
@@ -45,36 +65,16 @@ const AdditionalInfo = () => {
       color: "red",
       date: "Dec 2023 – Feb 2024"
     },
-    {
-      title: "Facilitator - Google Cloud Arcade",
-      description: "Participated in Google Cloud's gamified learning program, exploring hands-on labs in cloud computing, AI/ML, and application development. Engaged in monthly challenges and activities to build practical cloud skills and deepen technical knowledge.",
-      icon: <Award className="w-6 h-6" />,
-      color: "blue"
-    },
-    {
-      title: "Member - Women in Cloud Digital Network",
-      description: "Active member of the Women in Cloud Digital Network, contributing to the advancement of women in cloud computing and technology fields through networking, mentorship, and skill development.",
-      icon: <Users className="w-6 h-6" />,
-      color: "purple"
-    },
-    {
-      title: "Participant - Infosys Springboard Pragati Cohort 4",
-      description: "Participated in The Pragati: Path to Future cohort by Infosys Springboard, a 3.5-month hybrid skilling program for women, featuring in-person and virtual training by industry experts in cutting-edge technologies.",
-      icon: <Trophy className="w-6 h-6" />,
-      color: "green"
-    },
+    
+    
+    
     {
       title: "President - Throwball Club, GITAM",
       description: "Led the Throwball Club at GITAM University as President, managing team activities, organizing tournaments, and fostering sportsmanship among students while balancing academic and athletic responsibilities.",
       icon: <Heart className="w-6 h-6" />,
       color: "red"
     },
-    {
-      title: "Participant - GirlScript Summer of Code 2024",
-      description: "Participated in GirlScript Summer of Code (GSSoC) 2024, contributing to open-source projects and collaborating with developers worldwide to enhance coding skills and contribute to meaningful software development.",
-      icon: <Award className="w-6 h-6" />,
-      color: "orange"
-    }
+    
   ];
 
   const getColorClasses = (color: string) => {

@@ -9,12 +9,12 @@ const Skills = () => {
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["React.js", "Flask", "Matplotlib"],
+      skills: ["React.js", "Flask", "Langchain", "sentence-transformers"],
       color: "green"
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git/GitHub", "VS Code", "Power BI", "QGIS", "Excel"],
+      skills: ["Git/GitHub", "VS Code", "Power BI", "QGIS", "Excel", "Ollama"],
       color: "purple"
     },
     {
@@ -32,24 +32,17 @@ const Skills = () => {
   const certifications = [
     {
       name: "AWS Cloud Foundations",
-      link: "#aws-cloud-foundations"
+      link: "public/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250630-28-d14uue.pdf"
     },
     {
       name: "AWS Data Engineering",
-      link: "#aws-data-engineering"
+      link: "public/AWS_Academy_Graduate___AWS_Academy_Data_Engineering_Badge20250630-25-rggsv3.pdf"
     },
     {
       name: "Cisco CCNA",
-      link: "#cisco-ccna"
+      link: "public/CCNAITNUpdated20250630-28-vj2r1m.pdf"
     },
-    {
-      name: "Deloitte Australia Data Analytics (Forage)",
-      link: "#deloitte-cert"
-    },
-    {
-      name: "TATA Group Data Visualization (Forage)",
-      link: "#tata-cert"
-    }
+    
   ];
 
   const getColorClasses = (color: string) => {

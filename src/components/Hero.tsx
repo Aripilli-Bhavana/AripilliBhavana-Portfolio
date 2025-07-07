@@ -1,4 +1,3 @@
-
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
@@ -16,11 +15,12 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Profile Photo */}
           <div className="flex-shrink-0">
-            <div className="w-48 h-56 bg-gradient-to-br from-slate-700/80 via-slate-600/80 to-slate-800/80 rounded-lg shadow-2xl flex items-center justify-center backdrop-blur-sm">
-              <span className="text-slate-300 text-sm text-center px-4">
-                Passport Size Photo<br/>
-                (Add your photo here)
-              </span>
+            <div className="w-48 h-56 rounded-lg shadow-2xl overflow-hidden border-2 border-slate-700">
+              <img
+                src="public/bhavana-photo .jpg" 
+                alt="Aripilli Bhavana"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -31,19 +31,19 @@ const Hero = () => {
                 Aripilli Bhavana
               </span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-gray-300">
-              Computer Science Engineering Student
+              Final Year Computer Science and Engineering Student
             </p>
-            
+
             <p className="text-lg text-slate-400">
               GITAM University • CGPA: 8.02
             </p>
-            
+
             <p className="text-lg md:text-xl text-gray-300 italic max-w-2xl">
               "Creating solutions that help others is my ikigai!!"
             </p>
-            
+
             <div className="flex justify-center md:justify-start space-x-6 pt-4">
               <a
                 href="mailto:aripilli.bhavana8@gmail.com"

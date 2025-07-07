@@ -20,10 +20,10 @@ const Experience = () => {
     },
     {
       title: "Intern",
-      company: "Training and Competency Development (TCD) - GCGC",
-      location: "Hybrid",
-      period: "2023 – Present",
-      description: "Part of the placement cell, organizing events that bridge the gap between academics and corporate connections. Assisted in organizing events and bridging academic-corporate gaps, contributing to community building and knowledge sharing initiatives.",
+      company: "Training and Competency Development TCD - GCGC",
+      location: "Visakhapatnam (On-site)",
+      period: "Nov 2024 – Present",
+      description: "Part of the placement cell where we organize events that bridge the gap between academics and corporate connections. Assisted in organizing events and bridging academic-corporate gaps, contributing to community building and knowledge sharing initiatives.",
       type: "current"
     }
   ];
