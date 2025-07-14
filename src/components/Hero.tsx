@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="flex-shrink-0">
             <div className="w-48 h-56 rounded-lg shadow-2xl overflow-hidden border-2 border-slate-700">
               <img
-                src="public/bhavana-photo .jpg" 
+                src="public/bhavana-photo.jpg" 
                 alt="Aripilli Bhavana"
                 className="w-full h-full object-cover"
               />
