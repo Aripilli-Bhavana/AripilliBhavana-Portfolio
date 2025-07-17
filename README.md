@@ -1,10 +1,5 @@
-Sure, Bhavana! Here's a clean, minimal, and professional `README.md` for your portfolio project. It’s designed to explain the purpose, tech stack, setup, and deployment without sounding boastful.
 
----
 
-### ✅ `README.md` for Your Portfolio
-
-````markdown
 # 🌐 Aripilli Bhavana - Personal Portfolio
 
 This is my personal portfolio website built using **React + TypeScript** with **Tailwind CSS** and deployed via **GitHub Pages**. It highlights my academic background, technical skills, projects, internships, and certifications.
